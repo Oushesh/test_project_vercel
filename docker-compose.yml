@@ -3,17 +3,6 @@ services:
   backend:
     build:
       context: .
-      dockerfile: dev.dev.Dockerfile
-    ports:
-      - "8000:8000"
-
-  frontend:
-    build:
-      context: ./frontend
       dockerfile: dev.Dockerfile
     ports:
-      - "3000:3000"
-    volumes:
-      - ./frontend/src:/app/src
-    stdin_open: true
-    tty: true
+      - "8000:8000"
