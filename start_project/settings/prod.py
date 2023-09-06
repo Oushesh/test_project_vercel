@@ -9,7 +9,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://d-sinclair-gpt.herokuapp.com/']
+ALLOWED_HOSTS = ['https://testprojectvercel-2f02ec0f7012.herokuapp.com/']
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 
