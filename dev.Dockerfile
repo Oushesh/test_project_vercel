@@ -4,8 +4,8 @@ ARG PORT=8000
 LABEL maintainer="oushesh"
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /django_ifc_ai_new
-COPY requirements.txt /django_ifc_ai_new/
+WORKDIR /start_project
+COPY requirements.txt /start_project/
 
 RUN apt update && \
 	apt install build-essential && \
@@ -13,7 +13,7 @@ RUN apt update && \
 	pip install --upgrade pip && \
 	pip install --no-cache-dir -r requirements.txt
 
-COPY . /django_ifc_ai_new/
+COPY . /start_project/
 
-RUN chmod a+x /django_ifc_ai_new/dev-docker-entrypoint.sh
-ENTRYPOINT ["/django_ifc_ai_new/dev-docker-entrypoint.sh"]
+RUN chmod a+x /start_project/dev-docker-entrypoint.sh
+ENTRYPOINT ["/start_project/dev-docker-entrypoint.sh"]
