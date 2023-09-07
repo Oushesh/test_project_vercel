@@ -1,5 +1,5 @@
 """
-WSGI config for courtneyOracle courtneyOracle.
+WSGI config for courtneyryan project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'courtneyOracle.settings.dev')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'courtneyryan.settings.dev')
 
 application = get_wsgi_application()
