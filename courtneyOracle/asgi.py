@@ -1,5 +1,5 @@
 """
-ASGI config for test_project test_project.
+ASGI config for courtneyOracle courtneyOracle.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test_project.settings.dev')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'courtneyOracle.settings.dev')
 
 application = get_asgi_application()
