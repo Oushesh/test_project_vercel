@@ -4,8 +4,9 @@ ARG PORT=8000
 LABEL maintainer="oushesh"
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /start_project
-COPY requirements.txt /start_project/
+WORKDIR /courtneyryan
+COPY requirements.txt /courtneyryan/
+
 
 RUN apt update && \
 	apt install build-essential && \
@@ -13,7 +14,8 @@ RUN apt update && \
 	pip install --upgrade pip && \
 	pip install --no-cache-dir -r requirements.txt
 
-COPY . /start_project/
+COPY . /courtneyryan/
 
-RUN chmod a+x /start_project/dev-docker-entrypoint.sh
-ENTRYPOINT ["/start_project/dev-docker-entrypoint.sh"]
+RUN chmod a+x /courtneyryan/dev-docker-entrypoint.sh
+ENTRYPOINT ["/courtneyryan/dev-docker-entrypoint.sh"]
+
