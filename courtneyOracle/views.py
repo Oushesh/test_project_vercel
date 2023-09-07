@@ -4,8 +4,10 @@ from django.shortcuts import render
 from .models import BlogPost, UserActivity
 from django.views.generic import CreateView, DetailView
 
+"""
 def home(request):
     return render(request,'home.html',{'posts':BlogPost.objects.all()})
+"""
 
 class UploadView(CreateView):
     model = UserActivity
