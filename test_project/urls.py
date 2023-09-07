@@ -1,4 +1,4 @@
-"""courtneyryan URL Configuration
+"""test_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -20,10 +20,10 @@ from ninja import Schema
 
 from django.conf import settings
 from django.conf.urls.static import static
-from courtneyOracle import views as blog_views
+from test_app import views as blog_views
 
-from courtneyOracle.api.v1.routers.dataconnectors import router as dataconnectors_router
-from courtneyOracle.api.v1.routers.scrape import router as scrape_router
+from test_app.api.v1.routers.dataconnectors import router as dataconnectors_router
+from test_app.api.v1.routers.scrape import router as scrape_router
 
 #We add all the routers in urls.py
 api = NinjaAPI()

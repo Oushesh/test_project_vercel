@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
-class CourtneyoracleConfig(AppConfig):
+class TestAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'courtneyOracle'
+    name = 'test_app'
