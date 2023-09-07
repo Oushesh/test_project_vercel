@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import dj_database_url
-from decouple import config
 from dotenv import load_dotenv,find_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'. #modified here: Oushesh since we have settings in another settings folder.

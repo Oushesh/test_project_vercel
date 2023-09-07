@@ -39,7 +39,7 @@
 
 ## Deployments done on heroku
    Check here: https://devcenter.heroku.com/articles/git
-   Currently main branch is ueded for deployments:
+   Currently main branch is used for deployments:
    --> git push heroku main
 
 ## Tips for Deployment: 
