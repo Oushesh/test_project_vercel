@@ -4,18 +4,18 @@ ARG PORT=8000
 LABEL maintainer="oushesh"
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /test_project
-COPY requirements_old.txt /test_project/
+WORKDIR /courtneyryan
+COPY requirements.txt /courtneyryan/
 
 
 RUN apt update && \
 	apt install build-essential && \
 	rm -rf /var/cache/apk/* && \
 	pip install --upgrade pip && \
-	pip install --no-cache-dir -r requirements_old.txt
+	pip install --no-cache-dir -r requirements.txt
 
-COPY . /test_proejct/
+COPY . /courtneyryan/
 
-RUN chmod a+x /test_project/dev-docker-entrypoint.sh
-ENTRYPOINT ["/test_project/dev-docker-entrypoint.sh"]
+RUN chmod a+x /courtneyryan/dev-docker-entrypoint.sh
+ENTRYPOINT ["/courtneyryan/dev-docker-entrypoint.sh"]
 
