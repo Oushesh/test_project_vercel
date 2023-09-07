@@ -68,3 +68,5 @@
 ## Data: now local will be saved on supabase soon
 ## with all the precomputed embeddings:
 ## Successful deployment on Heroku
+
+## App
