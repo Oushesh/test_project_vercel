@@ -16,6 +16,6 @@ RUN apt update && \
 
 COPY . /courtneyryan/
 
-RUN chmod a+x /courtneyryan/dev-docker-entrypoint.sh
+RUN chmod a+x /project/dev-docker-entrypoint.sh
 ENTRYPOINT ["/courtneyryan/dev-docker-entrypoint.sh"]
 

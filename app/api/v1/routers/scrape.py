@@ -14,9 +14,9 @@ import urllib, requests
 import os,sys
 from dotenv import load_dotenv, find_dotenv
 from llama_index import download_loader
-from courtneyOracle.api.v1.utils.utils import *
-from courtneyOracle.api.v1.utils.Notion.injest import *
-from courtneyOracle.api.v1.utils.Notion.qa import *
+from app.api.v1.utils.utils import *
+from app.api.v1.utils.Notion.injest import *
+from app.api.v1.utils.Notion.qa import *
 from django.http import JsonResponse
 
 """
