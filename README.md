@@ -69,4 +69,5 @@
 ## with all the precomputed embeddings:
 ## Successful deployment on Heroku
 
-## App
+## App Images:
+   How things look like?
