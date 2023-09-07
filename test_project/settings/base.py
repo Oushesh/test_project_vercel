@@ -4,7 +4,7 @@ import dj_database_url
 from decouple import config
 from dotenv import load_dotenv,find_dotenv
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'. #modified here: Oushesh since we have settings in another settings folder.
+# Build paths inside the test_project like this: BASE_DIR / 'subdir'. #modified here: Oushesh since we have settings in another settings folder.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
@@ -32,7 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'storages',
-    'app',
+    'test_app',
 ]
 
 MIDDLEWARE = [
@@ -45,7 +45,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'test_project.urls'
 
 TEMPLATES = [
     {
@@ -63,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'test_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
